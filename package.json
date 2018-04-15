@@ -1,0 +1,16 @@
+{
+  "name": "docker-node",
+  "version": "1.0.0",
+  "description": "Node in docker env",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Manel Marcos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mocha": "^5.1.0",
+    "supertest": "^3.0.0"
+  }
+}
