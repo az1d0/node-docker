@@ -9,5 +9,3 @@ script:
   - docker build --tag nodedock .
   - docker run nodedock npm test
 
-after_script:
-  - docker images
