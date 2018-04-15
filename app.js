@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 var Raven = require('raven');
 
-Raven.config('https://f58e5b45cd554f02881d25070f747488@sentry.io/1189537').install();
+// Raven.config('xxxxxxxxxx').install();
 /* 
 try {
     doSomething(a[0]);
