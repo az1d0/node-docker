@@ -1,6 +1,9 @@
 sudo: required
 
 language: node_js
+node_js: 
+  - "9.10.1"
+cache: npm
 
 services:
   - docker
@@ -10,4 +13,4 @@ script:
   - docker run nodedock npm test
 
 after_script:
-  - docker images
+  - sh deployment/now.sh
