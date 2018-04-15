@@ -1,4 +1,13 @@
 sudo: required
 
+language: node_js
+
 services:
   - docker
+
+script:
+  - docker build --tag nodedock .
+  - docker run nodedock npm test
+
+after_script:
+  - docker images
