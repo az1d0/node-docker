@@ -12,5 +12,8 @@ script:
   - docker build --tag nodedock .
   - docker run nodedock npm test
 
-after_script:
-  - sh deployment/now.sh
+deploy:
+  provider: script
+  script: bash deployment/now.sh
+  on:
+    branch: master
